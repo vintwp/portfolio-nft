@@ -1,0 +1,170 @@
+/*Hero Section*/
+
+$mainFont: 'Inter', sans-serif;
+$pressFont: 'Roboto', sans-serif;
+$logoFont: 'Valera Round', sans-serif;
+$mobile: 575.98px;
+$tablet: 767.98px;
+$laptop: 991.98px;
+$desktop: 1199.98px;
+$padding-section-mobile: 64px 32px 66px 32px;
+
+.hero {
+  height: calc(100vh - 60px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  &__label {
+    color: #FF3998;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0 0 24px 0;
+
+  }
+
+  &__title {
+    font-size: 96px;
+    font-weight: 900;
+    margin: 0 0 32px 0;
+
+  }
+
+  &__text {
+    color: var(--font-color1);
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 0 41px 0;
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      position: absolute;
+      // max-width: 328px;
+      min-width: 578px;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+    }
+
+  }
+
+  @media (max-width: $tablet) {
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__image {
+  
+      > img {
+        transform: translate(-50%, -17%);
+        min-width: 320px;
+        left: 100%;
+        top: 0;
+      }
+    
+    }
+  }
+
+}
+
+
+.footer-hero {
+  height: 100%;
+
+  &__container {
+    border-top: 2px solid var(--bg-small-card-color1);
+    border-bottom: 2px solid var(--bg-small-card-color1);
+    padding: 120px 0 122px 0 !important;
+    
+  }
+
+  &__title {
+    font-size: 56px;
+    margin: 0 0 24px 0;
+  }
+
+  &__image img {
+    min-width: 208px;
+    top: auto;
+    transform: translate(-50%, 0);
+  }
+
+  &__main-img {
+    max-width: 208px !important;
+    width: 100%;
+    bottom: -124px;
+    z-index: 100;
+  }
+
+  &__bg-pink, 
+  &__bg-sand {
+    max-width: 700px !important;
+    bottom: -124px;
+  }
+
+  &__bg-sand {
+    left: 30% !important;
+    z-index: 20;
+    min-width: 485px !important;
+  }
+
+  &__bg-pink {
+    z-index: 10;
+    min-width: 635px !important;
+  }
+
+  &__footer-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+  @media (max-width: $tablet) {
+    
+    &__container {
+      padding: 0 !important;
+      border: none;
+    }
+
+    &__image .footer-hero__main-img {
+      bottom: -66px;
+      left: calc(100% - 32px);
+    }
+
+    &__image .footer-hero__bg-pink {
+      left: -50%;
+      top: auto;
+      bottom: -66px;
+      transform: translate(0, 0);
+    }
+
+    
+    &__image .footer-hero__bg-sand {
+      left: 100% !important;
+    }
+
+  }
+
+
+
+  @media (max-width: $tablet) {
+
+    border-top: 2px solid var(--bg-small-card-color1);
+    border-bottom: 2px solid var(--bg-small-card-color1);
+
+  }
+
+}

@@ -1,0 +1,24 @@
+.button {
+  position: relative;
+  width: 188px;
+  height: 75px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--font-color3);
+  background-color: var(--bg-color);
+  border-radius: 50px;
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  background: rgb(255,57,152);
+  background: linear-gradient(40deg, rgba(255,57,152,1) 0%, rgba(255,57,57,1) 12%, rgba(255,129,57,1) 84%, rgba(57,255,160,1) 97%);
+  z-index: -1;
+  border-radius: 50px;
+}

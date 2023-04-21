@@ -1,0 +1,45 @@
+.press {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item img {
+    width: 100%;
+  }
+
+  &__mob-enabled {
+    display: none !important;
+  }
+
+  @media(max-width: $laptop) {
+    padding-bottom: 0;
+
+    .pb-0 {
+      padding-bottom: 0;
+    }
+
+    &__item:not(:last-child),
+    &__item:not(:nth-last-child(2)) {
+      padding-bottom: 20px;
+    }
+
+    &__mob-disabled {
+      display: none !important;
+    }
+
+    &__mob-enabled {
+      display: flex !important;
+    }
+  }
+
+  @media(max-width: $tablet) {
+  .container {
+      width: 100%;
+    }
+  }
+}
+
+

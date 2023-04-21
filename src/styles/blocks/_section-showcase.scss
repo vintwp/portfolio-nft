@@ -1,0 +1,33 @@
+.showcase {
+
+
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin: 0 0 56px 0;
+  }
+
+  &__text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--font-color2);
+  }
+
+  &__text a {
+    text-decoration: underline;
+    color: var(--font-color2);
+  }
+
+  @media (max-width: $laptop) {
+
+    .container {
+      padding-right: 0;
+      overflow-x: hidden;
+    }
+  }
+
+
+}
