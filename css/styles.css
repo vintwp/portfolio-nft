@@ -1110,7 +1110,8 @@ section {
   font-size: 56px;
 }
 
-.footer-hero__image img {
+.footer-hero__image img,
+.footer-hero__image picture {
   top: auto;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
@@ -1951,7 +1952,8 @@ section {
     font-size: 48px;
   }
 
-  .hero__image > img {
+  .hero__image > img,
+  .hero__image > picture {
     top: 0;
     left: 100%;
     -webkit-transform: translate(-50%, -17%);
