@@ -63,7 +63,8 @@ $padding-section-mobile: 64px 32px 66px 32px;
 
     &__image {
   
-      > img {
+      > img,
+      > picture {
         top: 0;
         left: 100%;
         transform: translate(-50%, -17%);
@@ -90,7 +91,8 @@ $padding-section-mobile: 64px 32px 66px 32px;
     font-size: 56px;
   }
 
-  &__image img {
+  &__image img,
+  &__image picture, {
     top: auto;
     transform: translate(-50%, 0);
     min-width: 208px;
