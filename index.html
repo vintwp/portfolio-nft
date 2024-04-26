@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- linthtml-disable doctype-first -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20240427013944"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" 
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css?_v=20240427013944"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css?_v=20240427013944" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core?_v=20240427013944" />
+  <link rel="stylesheet" href="css/styles.min.css?_v=20240427013944" />
+  <title>NFT</title>
+</head>
+  <body class="body">
+    <div class="body__wrapper">
+      <!-- linthtml-disable doctype-first -->
+
+<header class="header xyz-in" xyz="fade bottom ease-in-out">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-icon icon xyz-nested" xyz="fade left ease-in-out" href="#">
+          <img src="img/icons/logo.svg" alt="NFT Logo" class="inject-me navbar-logo" />
+        </a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+        >
+          <div class="animated-icon hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" xyz="fade left stagger ease-in-out">
+            <li class="nav-item xyz-nested">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item xyz-nested">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item xyz-nested">
+              <a class="nav-link" href="#">Launch</a>
+            </li>
+            <li class="nav-item xyz-nested">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+      <main class="main">
+        <div class="theme">
+          <img class="theme__change" data-theme="light" src="img/icons/sun.svg" alt="Light Theme">
+          <img class="theme__change" data-theme="dark" src="img/icons/moon.svg" alt="Dark Theme">
+        </div>
+        <section class="hero xyz-in">
+          <div class="container" xyz="fade small stagger ease-out-back">
+            <div class="row g-0">
+              <div class="col-lg-6 col-md-7 col-9 xyz-nested">
+                <div class="d-flex align-items-center h-100">
+                  <div class="row g-0">
+                    <div class="col-md-11">
+                      <div class="row g-0">
+                        <div class="hero__label section__label col-12">Launching Soon</div>
+                        <h1 class="hero__title title col-12">An NFT like no other</h1>
+                        <div class="hero__text col-11">
+                          Don’t miss out on the release of our new NFT. Sign up below to
+                          receive
+                          updates
+                          when we go live.</div>
+                        <button class="hero__button button col-4">Sign Up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-5 col-3 xyz-nested">
+                <div class="hero__image">
+                  <picture><source srcset="img/hero2.webp" type="image/webp"><img src="img/hero2.png" alt="Hero Image"></picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="upsell">
+          <div class="container">
+            <div class="row g-0">
+              <div class="upsell__body col-12">
+                <div class="logo-small">
+                    <img src="img/icons/logo-small.svg" alt="">
+                  </svg>
+                </div>
+                <div class="upsell__subtitle section__title_small">
+                  <h4>Free NFT for early birds</h4>
+                </div>
+                <div class="upsell__text">
+                  <p>Sign up today and you’ll get a free NFT when we launch.</p>
+                </div>
+                <div class="upsell__gradient">
+                  <div class="gradient-pink gradient-pink-sm gradient"></div>
+                  <div class="gradient-red gradient-red-lg gradient"></div>
+                  <div class="gradient-orange gradient-orange-lg gradient"></div>
+                  <div class="gradient-green gradient-green-sm gradient"></div>
+                </div>
+              </div>
+              <div class="upsell__graphic">
+                <div class="upsell__cards">
+                  <div class="card__container card1">
+                    <div class="card">
+                      <picture><source srcset="img/card-photo-1.webp" type="image/webp"><img src="img/card-photo-1.jpg" class="card-img-top" alt="Card 1"></picture>
+                      <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item card-series">Gloop Series</li>
+                          <li class="list-group-item card-bid">Top bid</li>
+                          <li class="list-group-item card-name">Purple Man</li>
+                          <li class="list-group-item card-price">2.99 ETH</li>
+                          <li class="list-group-item card-id">#12983</li>
+                          <li class="list-group-item card-esd">1 day left</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="card__container card__container_black card2">
+                    <div class="card">
+                      <picture><source srcset="img/card-photo-2.webp" type="image/webp"><img src="img/card-photo-2.jpg" class="card-img-top" alt="Card 1"></picture>
+                      <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item card-series">Gloop Series</li>
+                          <li class="list-group-item card-bid">Top bid</li>
+                          <li class="list-group-item card-name">Purple Man</li>
+                          <li class="list-group-item card-price">2.99 ETH</li>
+                          <li class="list-group-item card-id">#12983</li>
+                          <li class="list-group-item card-esd">1 day left</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </section>
+        <section class="press">
+          <div class="container">
+            <div class="row">
+              <div class="press__container">
+                <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center press__mob-disabled">
+                  <div class="press__item d-flex flex-wrap justify-content-center">
+                    <a href="#">
+                      <img src="img/icons/press-boomerang.svg" class="inject-me" alt="Boomerang">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center press__mob-enabled">
+                  <div class="press__item d-flex flex-wrap justify-content-center">
+                    <a href="#">
+                      <img class="inject-me" src="icons/press-boomerang-mobile.svg" alt="Boomerang">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center">
+                  <div class="press__item d-flex justify-content-center">
+                    <a href="#">
+                      <img class="inject-me" src="img/icons/press-blimp.svg" alt="Blimp" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center">
+                  <div class="press__item d-flex justify-content-center pb-0">
+                    <a href="#">
+                      <img class="inject-me" src="img/icons/press-qrco.svg" alt="qrco" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center press__mob-disabled">
+                  <div class="press__item d-flex justify-content-center pb-0">
+                    <a href="#">
+                      <img class="inject-me" src="img/icons/press-opendoor.svg" alt="OpenDoor" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-6 d-flex align-items-center">
+                  <div class="press__item d-flex justify-content-center pb-0">
+                    <a href="#">
+                      <img class="inject-me" src="img/icons/press-droplet.svg" alt="Droplet" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="showcase">
+          <div class="container">
+            <div class="showcase__text">
+              <h4 class="showcase__title section__title_small">LE Super Rare Auction</h4>
+              <p>We have released four limited edition NFTs early which can be bid on via <a href="#">OpenSea</a>.</p>
+            </div>
+            <div class="splide">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="col-lg-3 splide__slide">
+                    <div class="card h-100">
+                      <picture><source srcset="img/card-photo-1.webp" type="image/webp"><img src="img/card-photo-1.jpg" class="card-img-top" alt="Card 1"></picture>
+                      <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item card-series">Gloop Series</li>
+                          <li class="list-group-item card-bid">Top bid</li>
+                          <li class="list-group-item card-name">Purple Man</li>
+                          <li class="list-group-item card-price">2.99 ETH</li>
+                          <li class="list-group-item card-id">#12983</li>
+                          <li class="list-group-item card-esd">1 day left</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 splide__slide">
+                    <div class="card h-100">
+                      <picture><source srcset="img/card-photo-2.webp" type="image/webp"><img src="img/card-photo-2.jpg" class="card-img-top" alt="Card 2"></picture>
+                      <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item card-series">Gloop Series</li>
+                          <li class="list-group-item card-bid">Top bid</li>
+                          <li class="list-group-item card-name">Beige</li>
+                          <li class="list-group-item card-price">2.99 ETH</li>
+                          <li class="list-group-item card-id">#12983</li>
+                          <li class="list-group-item card-esd">1 day left</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 splide__slide">
+                    <div class=" card h-100">
+                    <picture><source srcset="img/card-photo-3.webp" type="image/webp"><img src="img/card-photo-3.jpg" class="card-img-top" alt="Card 3"></picture>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item card-series">Gloop Series</li>
+                        <li class="list-group-item card-bid">Top bid</li>
+                        <li class="list-group-item card-name">Red Man</li>
+                        <li class="list-group-item card-price">2.99 ETH</li>
+                        <li class="list-group-item card-id">#12983</li>
+                        <li class="list-group-item card-esd">1 day left</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 splide__slide">
+                  <div class="card h-100">
+                    <picture><source srcset="img/card-photo-4.webp" type="image/webp"><img src="img/card-photo-4.jpg" class="card-img-top" alt="Card 4"></picture>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item card-series">Gloop Series</li>
+                        <li class="list-group-item card-bid">Top bid</li>
+                        <li class="list-group-item card-name">Green</li>
+                        <li class="list-group-item card-price">2.99 ETH</li>
+                        <li class="list-group-item card-id">#12983</li>
+                        <li class="list-group-item card-esd">1 day left</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 splide__slide">
+                  <div class="card h-100">
+                    <picture><source srcset="img/card-photo-4.webp" type="image/webp"><img src="img/card-photo-4.jpg" class="card-img-top" alt="Card 4"></picture>
+                    <div class="card-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item card-series">Gloop Series</li>
+                        <li class="list-group-item card-bid">Top bid</li>
+                        <li class="list-group-item card-name">Green</li>
+                        <li class="list-group-item card-price">2.99 ETH</li>
+                        <li class="list-group-item card-id">#12983</li>
+                        <li class="list-group-item card-esd">1 day left</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="promo promo-card">
+          <div class="container">
+            <div class="promo__container bg-color-sand">
+              
+              <div class="promo__with-image">
+                <div class="col-12 col-lg-6 z100">
+                  <div class="promo__text-block">
+                    <div class="promo__title section__title_small">
+                      <h4>Initial Release 4/11</h4>
+                    </div>
+                    <div class="promo__text">
+                      <p>We have released four limited edition NFTs early which can be bid on via
+                        <a href="#">OpenSea</a>.
+                      </p>
+                      <p>These will be the only four of these NFTs we ever make, so be sure not to miss out! </p>
+                      <p>50% of proceeds go to charity.</p>
+                    </div>
+                    <div class="promo__link">
+                      <a href="#">Check them out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 ">
+                  <div class="row g-0">
+                    <div class="promo__image-container col-lg-9">
+                      <div class="promo__image">
+                        <picture><source srcset="img/section-card-man.webp" type="image/webp"><img src="img/section-card-man.png" alt=""></picture>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-3 d-flex align-items-end justify-content-end">
+                      <div class="promo__info">
+                        <p class="card-series">Gloop Series</p>
+                        <p class="card-name">Red Man</p>
+                        <p class="card-id">#12983</p>
+                      </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="container">
+            <div class="promo__container promo-padding-80 bg-color-lgreen">
+              
+              <div class="promo__with-card">
+                <div class="col-12 col-lg-6">
+                  <div class="promo__text-block">
+                    <div class="promo__title section__title_small">
+                      <h4>Initial Release 4/11</h4>
+                    </div>
+                    <div class="promo__text">
+                      <p>We have released four limited edition NFTs early which can be bid on via
+                        <a href="#">OpenSea</a>.
+                      </p>
+                      <p>These will be the only four of these NFTs we ever make, so be sure not to miss out! </p>
+                      <p>50% of proceeds go to charity.</p>
+                    </div>
+                    <div class="promo__link">
+                      <a href="#">Check them out</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 ">
+                  <div class="row g-0">
+                    <div class="promo__card-container col-lg-8 col-12">
+                      <div class="card">
+                        <picture><source srcset="img/card-photo-2.webp" type="image/webp"><img src="img/card-photo-2.jpg" class="card-img-top" alt="Card 2"></picture>
+                        <div class="card-body">
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item card-series">Gloop Series</li>
+                            <li class="list-group-item card-bid">Top bid</li>
+                            <li class="list-group-item card-name">Beige</li>
+                            <li class="list-group-item card-price">2.99 ETH</li>
+                            <li class="list-group-item card-id">#12983</li>
+                            <li class="list-group-item card-esd">1 day left</li>
+                          </ul>
+                        </div>
+                      </div>
+                </div>
+                </div>
+                <div class="section-card__gradient">
+                  <div class="gradient-pink gradient-pink-lg gradient"></div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <section class="small">
+          <div class="container">
+            <div class="row g-0 g-md-5">
+              <div class="small__card small__1 col-12 col-lg-6">
+                <div class="small__body">
+                  <picture><source srcset="img/icons/small-section-card-logo-colored.webp" type="image/webp"><img src="img/icons/small-section-card-logo-colored.png" alt="Icon card"></picture>
+                  <h4>An NFT like no other</h4>
+                  <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on
+                    18/9.</p>
+                  <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on
+                    18/9.Don’t miss out on the release of our new NFT.</p>
+                </div>
+              </div>
+              <div class="small__card small__2 col-12 col-lg-6">
+                <div class="small__body">
+                  <picture><source srcset="img/icons/small-section-card-logo-gray.webp" type="image/webp"><img src="img/icons/small-section-card-logo-gray.png" alt="Icon card"></picture>
+                  <h4>An NFT like no other</h4>
+                  <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on
+                    18/9.</p>
+                  <p>Don’t miss out on the release of our new NFT. Sign up below to receive updates when we go live on
+                    18/9.Don’t miss out on the release of our new NFT.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="footer-hero hero">
+          <div class="container">
+            <div class="footer-hero__container container">
+              <div class="row g-0">
+                <div class="col-lg-6 col-7">
+                  <div class="row g-0">
+                    <div class="col-md-11 col-12">
+                      <div class="row g-0">
+                        <div class="footer-hero__label hero__label section__label col-12">Launching Soon</div>
+                        <h1 class="footer-hero__title hero__title title col-12">An NFT like no other</h1>
+                        <div class="hero__text col-md-11 col-12">
+                          Don’t miss out on the release of our new NFT. Sign up below
+                          to
+                          receive
+                          updates.
+                        </div>
+                        <button class="footer-hero__button hero__button button col-4">Sign Up</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-5 position-relative">
+                  <div class="footer-hero__image hero__image">
+                    <picture><source srcset="img/footer-upsell.webp" type="image/webp"><img class="footer-hero__main-img"src="img/footer-upsell.png" alt="Card Avatar"></picture>
+                    <picture><source srcset="img/footer-bg-pink.webp" type="image/webp"><img class="footer-hero__bg-pink" src="img/footer-bg-pink.png" alt="Pink color"></picture>
+                    <picture><source srcset="img/footer-bg-sand.webp" type="image/webp"><img class="footer-hero__bg-sand" src="img/footer-bg-sand.png" alt="Sand color"></picture>
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+    
+        </section>
+      </main>
+      <!-- linthtml-disable doctype-first -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-0">
+      <div class="footer__logos col-12 col-lg-6">
+        <div class="logo col-md-6">
+          <a class="logo__link logo-icon icon" href="#">
+            <img 
+              src="img/icons/logo.svg"
+              alt="NFT Logo"
+              class="inject-me" 
+            />
+          </a>
+        </div>
+        <div class="footer__text">
+          Exclusive NFT Collection
+        </div>
+        <div class="footer__social">
+          <a class="icon" href="#">
+            <img
+              src="img/icons/facebook.svg"
+              alt="Facebook"
+              class="inject-me" 
+            />
+          </a>
+          <a class="icon" href="#">
+            <img
+              src="img/icons/twitter.svg"
+              alt="Twitter"
+              class="inject-me" 
+            />
+          </a>
+          <a class="icon" href="#">
+            <img
+              src="img/icons/instagram.svg"
+              alt="Instagram"
+              class="inject-me" 
+            />
+          </a>
+          <a class="icon" href="#">
+            <img
+              src="img/icons/tiktok.svg"
+              alt="TikTok"
+              class="inject-me" 
+            />
+          </a>
+        </div>
+      </div>
+      <div class="footer__menu col-12 col-lg-6">
+        <div class="footer__column col-6 col-lg-3">
+          <span>About</span>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Legal</a></li>
+          </ul>
+        </div>
+        <div class="footer__column col-6 col-lg-3">
+          <span>Nft</span>
+          <ul>
+            <li><a href="#">OpenSea</a></li>
+            <li><a href="#">Maker</a></li>
+            <li><a href="#">Learn</a></li>
+          </ul>
+        </div>
+        <div class="footer__column col-6 col-lg-3">
+          <span>Contact</span>
+          <ul>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__column col-6 col-lg-3">
+          <span>Social</span>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom col-12">
+        <div class="footer__btext">© Copyright 2022 NFTlanding</div>
+        <div class="footer__btext">Launching August 2022</div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/svg-injector@1.1.3/svg-injector.min.js?_v=20240427013944"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js?_v=20240427013944"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const mySVGsToInject = document.querySelectorAll('img.inject-me');
+      SVGInjector(mySVGsToInject);
+    </script>
+    <script src="js/app.min.js?_v=20240427013944"></script>
+  </body>
+</html>
