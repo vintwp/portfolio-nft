@@ -1,0 +1,16 @@
+.logo {
+
+  &-icon {
+    color: var(--heading-color);
+    transition: color 0.3s ease;
+  }
+
+  &-icon:hover {
+    color: #ff3998;
+  }
+
+  svg path {
+    fill: currentcolor;
+    transition: fill 0.3s ease;
+  }
+}

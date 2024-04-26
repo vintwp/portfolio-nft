@@ -1,0 +1,43 @@
+section {
+  margin-bottom: 120px;
+}
+
+.section {
+  &__title_small {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--heading-color);
+  }
+}
+
+@media (max-width: $tablet) {
+  section,
+  footer {
+    padding: 64px 0 66px;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $laptop) {
+  section,
+  footer {
+    padding: 15px 0 17px;
+  }
+}
+
+@media (max-width: $laptop) {
+
+  section {
+    margin-bottom: 0;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: $laptop) {
+  .container {
+    width: 100%;
+    max-width: 100vw;
+  }
+}

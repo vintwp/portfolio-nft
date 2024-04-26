@@ -1,0 +1,52 @@
+$root-font-size: 14;
+
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-xldesktop: 1440px;
+
+
+$mainFont: 'Inter', sans-serif;
+$pressFont: 'Roboto', sans-serif;
+$logoFont: 'Valera Round', sans-serif;
+$mobile: 575.98px;
+$tablet: 767.98px;
+$laptop: 991.98px;
+$desktop: 1199.98px;
+$padding-section-mobile: 64px 32px 66px 32px;
+$radius-rounding: 16px;
+
+
+html[data-theme='light'] {
+  --bg-color: #FFFFFF;
+  --heading-color: #111111;
+  --font-color1: #555555; // nav menu, hero section, small card section, footer
+  --font-color2: #555555; // showcase, footer
+  --font-color3: #111111;
+  --font-color4: #555555;
+  --font-color5: #FF3998;
+  --font-color6: #999999;
+  --font-color7: #FF3998;
+  --bg-card-color: #EEEEEE; //card, small card
+  --bg-card-color2: #FFF0E8; //big cards
+  --bg-card-color3: #EDFFF6; //big cards
+  --font-card-color: #111111;
+  --bg-small-card-color1: #EEEEEE;
+  --bg-small-card-color2: #FFFFFF;
+}
+
+html[data-theme='dark'] {
+  --bg-color: #111111;
+  --heading-color: #FFFFFF;
+  --font-color1: #CCCCCC; // nav menu, hero section, small card section, footer
+  --font-color2: #999999; // showcase
+  --font-color3: #FFFFFF; // 
+  --font-color4: #111111;
+  --font-color5: #111111;
+  --font-color6: #777777;
+  --font-color7: #FFFFFF;
+  --bg-card-color: #000000;
+  --bg-card-color2: #FF8139; //big cards
+  --bg-card-color3: #39FFA0; //big cards
+  --bg-small-card-color1: #555555;
+  --bg-small-card-color2: #111111;
+}

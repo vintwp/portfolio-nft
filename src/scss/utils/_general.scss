@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+  color: var(--heading-color);
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+a:hover,
+a:hover path,
+.icon:hover path {
+  color: #FF3998 !important;
+  fill: #FF3998;
+  transition: 0.3s;
+}
+
+.logo-icon path {
+  fill: var(--heading-color);
+}

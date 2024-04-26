@@ -1,0 +1,31 @@
+.theme {
+  cursor: pointer;
+
+  position: fixed;
+  z-index: 9999;
+  top: 64px;
+  left: 16px;
+  transform: translate(-50%, -50%);
+
+  width: 28px;
+  height: 28px;
+  padding: 2px;
+
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+
+  &__change {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  .theme__change[data-theme="dark"] {
+    display: block;
+  }
+
+  .theme__change[data-theme="light"] {
+    display: none;
+  }
+
+}
