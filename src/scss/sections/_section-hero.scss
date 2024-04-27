@@ -91,7 +91,8 @@ $padding-section-mobile: 64px 32px 66px 32px;
   }
 
   &__image {
-    picture {
+    picture,
+    img {
       position: absolute;
       bottom: -123px;
       display: block;
@@ -110,9 +111,34 @@ $padding-section-mobile: 64px 32px 66px 32px;
       left: -150px;
     }
 
-    img {
+    & > img {
+      left: 50%;
+      transform: translateX(-50%);
+
+      display: block;
+
+      width: auto;
+      max-height: 467px;
+    }
+
+    & > picture > img {
       min-height: 467px;
     }
+
+    & > img:nth-child(1) {
+      z-index: 9;
+      left: 50%;
+    }
+
+    & > img:nth-child(2) {
+      z-index: 8;
+      left: 50%;
+    }
+
+    & > img:nth-child(3) {
+      left: 15%;
+    }
+
   }
 
   &__main-img {
@@ -128,6 +154,21 @@ $padding-section-mobile: 64px 32px 66px 32px;
   }
 
   @media (max-width: $tablet) {
+
+    &__image {
+
+      & > img:nth-child(1) {
+        left: 75% !important;
+      }
+
+      & > img:nth-child(2) {
+        left: 140%;
+      }
+
+      & > img:nth-child(3) {
+        left: 140%;
+      }
+    }
     
     &__container {
       padding: 0 !important;
