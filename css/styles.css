@@ -1110,8 +1110,8 @@ section {
   font-size: 56px;
 }
 
-.footer-hero__image picture,
-.footer-hero__image img {
+.footer-hero__image > picture,
+.footer-hero__image > img {
   position: absolute;
   bottom: -123px;
   display: block;
