@@ -32,9 +32,7 @@ export const html = () => {
       basepath: '@file',
     }))
     .pipe(app.plugins.replace(maskReplaceImagePath, 'img/'))
-    .pipe(
-      app.plugins.if(app.isBuild, webHtmlNosvg())
-    )
+    .pipe(webHtmlNosvg())
     .pipe(
       app.plugins.if(app.isBuild, versionNumber(version))
     )
