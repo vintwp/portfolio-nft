@@ -1110,37 +1110,58 @@ section {
   font-size: 56px;
 }
 
-.footer-hero__image img,
-.footer-hero__image picture {
-  top: auto;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  min-width: 208px;
+.footer-hero__image picture,
+.footer-hero__image img {
+  position: absolute;
+  bottom: -123px;
+  display: block;
+  width: 100%;
+}
+
+.footer-hero__image > picture:nth-child(1) {
+  z-index: 9;
+}
+
+.footer-hero__image > picture:nth-child(2) {
+  z-index: 8;
+}
+
+.footer-hero__image > picture:nth-child(3) {
+  left: -150px;
+}
+
+.footer-hero__image > img {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: auto;
+  max-height: 467px;
+}
+
+.footer-hero__image > picture > img {
+  min-height: 467px;
+}
+
+.footer-hero__image > img:nth-child(1) {
+  z-index: 9;
+  left: 50%;
+}
+
+.footer-hero__image > img:nth-child(2) {
+  z-index: 8;
+  left: 50%;
+}
+
+.footer-hero__image > img:nth-child(3) {
+  left: 15%;
 }
 
 .footer-hero__main-img {
-  z-index: 100;
-  bottom: -124px;
-  width: 100%;
-  max-width: 208px !important;
-}
-
-.footer-hero__bg-pink,
-.footer-hero__bg-sand {
-  bottom: -124px;
-  max-width: 700px !important;
-}
-
-.footer-hero__bg-sand {
-  z-index: 20;
-  left: 30% !important;
-  min-width: 485px !important;
-}
-
-.footer-hero__bg-pink {
-  z-index: 10;
-  min-width: 635px !important;
+  z-index: 999;
+  display: block;
+  margin: 0 auto;
 }
 
 .footer-hero__footer-bg {
@@ -1952,8 +1973,7 @@ section {
     font-size: 48px;
   }
 
-  .hero__image > img,
-  .hero__image > picture {
+  .hero__image > img {
     top: 0;
     left: 100%;
     -webkit-transform: translate(-50%, -17%);
@@ -1962,27 +1982,21 @@ section {
     min-width: 320px;
   }
 
+  .footer-hero__image > img:nth-child(1) {
+    left: 75% !important;
+  }
+
+  .footer-hero__image > img:nth-child(2) {
+    left: 140%;
+  }
+
+  .footer-hero__image > img:nth-child(3) {
+    left: 140%;
+  }
+
   .footer-hero__container {
     padding: 0 !important;
     border: none;
-  }
-
-  .footer-hero__image .footer-hero__main-img {
-    bottom: -66px;
-    left: calc(100% - 32px);
-  }
-
-  .footer-hero__image .footer-hero__bg-pink {
-    top: auto;
-    bottom: -66px;
-    left: -50%;
-    -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-
-  .footer-hero__image .footer-hero__bg-sand {
-    left: 100% !important;
   }
 
   .footer-hero {
